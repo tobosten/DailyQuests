@@ -1,0 +1,11 @@
+#2C3333 dark
+#293B5F blue
+#DBE6FD lightblue
+
+
+
+#0B1340 dark blue
+#162780 night blue
+#213ABF - blue - #2746E6
+#2B4EFF blue
+

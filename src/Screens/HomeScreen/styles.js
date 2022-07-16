@@ -17,13 +17,16 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 30,
         paddingTop: 5,
+        color: "#000000"
     },
     bottomContainer: {
         flex: 1,
 
     },
     continueText: {
-        fontSize: 16
+        fontSize: 16,
+        color: "#000000"
+
     }
 
 })

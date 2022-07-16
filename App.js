@@ -4,18 +4,21 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/Screens/HomeScreen/Home';
-import Next from './src/Screens/Next';
+import QuestScreen from './src/Screens/QuestScreen/QuestScreen';
+import ProjectContext from "./src/ProjectContext"
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="home" component={Home} options={{ headerShown: false }} />
-        <Stack.Screen name="next" component={Next} options={{ headerShown: false }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <ProjectContext>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="home" component={Home} options={{ headerShown: false }} />
+          <Stack.Screen name="quests" component={QuestScreen} options={{ headerShown: false }} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ProjectContext>
   );
 }
 

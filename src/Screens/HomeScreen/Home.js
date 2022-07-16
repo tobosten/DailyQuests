@@ -27,7 +27,7 @@ const Home = ({ navigation }) => {
                 <TouchableOpacity
                     style={{ flex: 3, alignItems: "center" , paddingTop: "40%"}}
                     onPress={() => {
-                        navigation.navigate("next")
+                        navigation.navigate("quests")
                     }}
                 >
                     <View style={styles.bottomContainer}>
